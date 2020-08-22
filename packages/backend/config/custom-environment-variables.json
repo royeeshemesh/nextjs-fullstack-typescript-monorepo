@@ -1,0 +1,17 @@
+{
+  "server": {
+    "ip": "SERVER_IP",
+    "port": "SERVER_PORT"
+  },
+  "dbConfig": {
+    "mongoURI": "MONGO_URI",
+    "mongoURIParams": "MONGO_URI_PARAMS",
+    "ssl": "MONGO_SSL"
+  },
+  "session": {
+    "secret": "SESSION_SECRET"
+  },
+  "jwt": {
+    "secret": "JWT_SECRET"
+  }
+}

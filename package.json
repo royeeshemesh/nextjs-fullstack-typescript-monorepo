@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "docker:build:app": "docker build -t starshopr-hr/app -f ./packages/app/Dockerfile .",
+
+    "docker:build:backend": "docker build -t starshopr-hr/backend -f ./packages/backend/Dockerfile .",
+
+    "docker:all": "npm run docker:backend && npm run docker:app",
+
+    "docker:run": "docker-compose up",
+    "build": "lerna run build --stream --scope=@starshopr-hr/{app,common,backend}",
+    "test": "lerna run test --stream --scope=@starshopr-hr/{app,common,backend}"
+  },
+  "dependencies": {
+    "lerna": "^3.20.2"
+  }
+}

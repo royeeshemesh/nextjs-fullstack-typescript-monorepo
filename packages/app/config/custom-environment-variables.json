@@ -1,0 +1,14 @@
+{
+  "server": {
+    "ip": "SERVER_IP",
+    "port": "SERVER_PORT"
+  },
+  "api": {
+    "protocol": "API_PROTOCOL",
+    "ip": "API_IP",
+    "port": "API_PORT"
+  },
+  "jwt": {
+    "secret": "JWT_SECRET"
+  }
+}

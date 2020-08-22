@@ -1,0 +1,10 @@
+{
+  "server": {
+    "port": 8081,
+    "ip": "0.0.0.0"
+  },
+  "api": {
+    "changeOrigin": true,
+    "xfwd": true
+  }
+}

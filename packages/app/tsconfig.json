@@ -1,0 +1,53 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "typeRoots": [
+      "src/custom_typings/**/*.ts",
+      "../../node_modules/@types"
+    ],
+    "outDir": "./dist",
+    "rootDir": "src",
+    "baseUrl": "src",
+    "moduleResolution": "node",
+    "strict": false,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "module": "esnext",
+    "sourceMap": true,
+    "declarationMap": false,
+    "jsx": "preserve",
+    "lib": [
+      "es6",
+      "dom",
+      "es2017",
+      "esnext.intl",
+      "es2017.intl",
+      "es2018.intl"
+    ],
+    "target": "es5",
+    "resolveJsonModule": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "strictNullChecks": true,
+    "noEmit": true
+  },
+  "include": [
+    "src/**/*.ts*"
+  ],
+  "exclude": [
+    "node_modules/**",
+    "dist/**"
+  ],
+  "references": [
+    {
+      "path": "../common"
+    }
+  ]
+}

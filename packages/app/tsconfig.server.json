@@ -1,0 +1,52 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "typeRoots": [
+      "src/custom_typings/**/*.ts",
+      "../../node_modules/@types"
+    ],
+    "outDir": "./dist",
+    "rootDir": "src",
+    "baseUrl": "src",
+    "moduleResolution": "node",
+    "strict": false,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "module": "commonjs",
+    "sourceMap": true,
+    "declaration": true,
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "resolveJsonModule": true,
+    "target": "es5",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "strictNullChecks": true,
+    "noEmit": false
+  },
+  "files": [
+    "src/server/index.ts"
+  ],
+  "references": [
+    {
+      "path": "../common"
+    }
+  ],
+  "include": [
+    "src/server",
+    "src/custom_typings"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

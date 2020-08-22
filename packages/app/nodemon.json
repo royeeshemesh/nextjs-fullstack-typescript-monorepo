@@ -1,0 +1,5 @@
+{
+  "watch": ["src/server", "src/static"],
+  "exec": "cross-env TS_NODE_TRANSPILE_ONLY=true TS_NODE_PROJECT=tsconfig.server.json node -r ts-node/register -r tsconfig-paths/register src/server/index.ts",
+  "ext": "ts js"
+}
